@@ -106,14 +106,18 @@ public class PlayersPanel extends JPanel{
      * @param name : New name for the first player
      */
     public void setPlayer1(String name){
-        player1.setText(name);
+        if(name!=null){
+            player1.setText(name);
+        }
     }
 
     /**Setter for player2's name
      * @param name : New name for the second player
      */
     public void setPlayer2(String name){
-        player2.setText(name);
+        if(name!=null){
+            player2.setText(name);
+        }
     }
 
     /**This method is used to reset scores for the game,

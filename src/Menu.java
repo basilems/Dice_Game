@@ -42,11 +42,13 @@ public class Menu extends JMenuBar {
 
         rules.addActionListener(new HelpListener());
         features.addActionListener(new FeaturesListener());
+        about.addActionListener(new AboutListener());
         game.add(reset);
         game.add(changeName1);
         game.add(changeName2);
         help.add(features);
         help.add(rules);
+        help.add(about);
         add(game); // Adding the menu tabs to the window
         add(themes);
         add(help);
@@ -64,7 +66,7 @@ public class Menu extends JMenuBar {
                     number, it's a draw and no one wins the round.
                     Enjoy the game!
                     
-                    To play the game just click on "Roll the dice" """);
+                    To play the game just click on "Roll the dice\"""","Rules",JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
@@ -81,10 +83,27 @@ public class Menu extends JMenuBar {
                     
                     Themes : You can also change the theme of the dice by choosing between 2 themes.
                          -> Default : Just the default dice with black dots
-                         -> Red : Dice with red dots                               
+                         -> Red : Dice with red dots
                     
                     Help : You are already here ;)
-                    """);
+                    ""","Info on features",JOptionPane.QUESTION_MESSAGE);
+        }
+    }
+
+    //Creating an event for the About
+    private class AboutListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JOptionPane.showMessageDialog(null, """
+                    This game was created as a school project first.
+                    However it displays some additional features and
+                    enhancements.
+                    
+                    It was made by:
+                            Basile Maillé and Hugo Damois,
+                        both third year students from Efrei Paris
+                        ""","About",JOptionPane.PLAIN_MESSAGE);
         }
     }
 
