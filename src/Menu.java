@@ -64,7 +64,7 @@ public class Menu extends JMenuBar {
                     number, it's a draw and no one wins the round.
                     Enjoy the game!
                     
-                    To play the game just click on \"Roll the dice\"""");
+                    To play the game just click on "Roll the dice" """);
         }
     }
 
@@ -81,7 +81,7 @@ public class Menu extends JMenuBar {
                     
                     Themes : You can also change the theme of the dice by choosing between 2 themes.
                          -> Default : Just the default dice with black dots
-                         -> Red : Dice with red dots                                
+                         -> Red : Dice with red dots                               
                     
                     Help : You are already here ;)
                     """);
@@ -123,7 +123,7 @@ public class Menu extends JMenuBar {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            die.loadDefault(); // Loading theme into active dice images
+            die.onlineLoadDefault(); // Loading theme into active dice images
             System.out.println("Default loaded"); // We notify of the successful change
         }
     }
@@ -133,7 +133,7 @@ public class Menu extends JMenuBar {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            die.loadRed(); // Loading theme into active dice images
+            die.onlineLoadRed(); // Loading theme into active dice images
             System.out.println("Red loaded"); // We notify of the successful change
         }
     }
