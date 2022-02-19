@@ -13,7 +13,7 @@ public class Die {
      *
      */
     public Die(){
-        loadDefault();//Loading the default theme
+        onlineLoadDefault();//Loading the default theme
     }
 
     /**The rolled method is created to display the image corresponding to the same value given as a parameter
