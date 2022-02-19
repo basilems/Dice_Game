@@ -99,12 +99,12 @@ public class Die {
         Die1=null;Die2=null;Die3=null;Die4=null;Die5=null;Die6=null;
         // We must use a try catch method because we are reading files
         try {
-            Die1 = ImageIO.read(new File("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Dice-1.svg/240px-Dice-1.svg.png")); //Die side images must be one the src folder
-            Die2 = ImageIO.read(new File("https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Dice-2.svg/240px-Dice-2.svg.png"));
-            Die3 = ImageIO.read(new File("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dice-3.svg/240px-Dice-3.svg.png"));
-            Die4 = ImageIO.read(new File("https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Dice-4.svg/240px-Dice-4.svg.png"));
-            Die5 = ImageIO.read(new File("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Dice-5.svg/240px-Dice-5.svg.png"));
-            Die6 = ImageIO.read(new File("https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Dice-6.svg/240px-Dice-6.svg.png"));
+            Die1 = ImageIO.read(new URL("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Dice-1.svg/240px-Dice-1.svg.png")); //Die side images must be one the src folder
+            Die2 = ImageIO.read(new URL("https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Dice-2.svg/240px-Dice-2.svg.png"));
+            Die3 = ImageIO.read(new URL("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dice-3.svg/240px-Dice-3.svg.png"));
+            Die4 = ImageIO.read(new URL("https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Dice-4.svg/240px-Dice-4.svg.png"));
+            Die5 = ImageIO.read(new URL("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Dice-5.svg/240px-Dice-5.svg.png"));
+            Die6 = ImageIO.read(new URL("https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Dice-6.svg/240px-Dice-6.svg.png"));
         } catch (IOException e) { // In case there is an error reading the files we give an IOException
             e.printStackTrace();
         }
