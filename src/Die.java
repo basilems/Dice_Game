@@ -32,13 +32,13 @@ public class Die {
         Die1=null;Die2=null;Die3=null;Die4=null;Die5=null;Die6=null;
         // We must use a try catch method because we are reading files
         try {
-//            Die1 = ImageIO.read(new File("src/Die1.png")); //Die side images must be one the src folder
-            Die1 = new ImageIcon(IMC.class.getResource("src/Die1.jpg"));
-            Die2 = ImageIO.read(new File("src/Die2.png"));
-            Die3 = ImageIO.read(new File("src/Die3.png"));
-            Die4 = ImageIO.read(new File("src/Die4.png"));
-            Die5 = ImageIO.read(new File("src/Die5.png"));
-            Die6 = ImageIO.read(new File("src/Die6.png"));
+            Die1 = ImageIO.read(new File("images/Die1.png")); //Die side images must be one the src folder
+//            Die1 = new ImageIcon(Die.class.getResource("images/Die1.jpg"));
+            Die2 = ImageIO.read(new File("images/Die2.png"));
+            Die3 = ImageIO.read(new File("images/Die3.png"));
+            Die4 = ImageIO.read(new File("images/Die4.png"));
+            Die5 = ImageIO.read(new File("images/Die5.png"));
+            Die6 = ImageIO.read(new File("images/Die6.png"));
         } catch (IOException e) { // In case there is an error reading the files we give an IOException
             e.printStackTrace();
         }
@@ -55,12 +55,12 @@ public class Die {
         Die1=null;Die2=null;Die3=null;Die4=null;Die5=null;Die6=null;
         // We must use a try catch method because we are reading files
         try {
-            Die1 = ImageIO.read(new File("src/Die1r.png")); //Die side images must be one the src folder
-            Die2 = ImageIO.read(new File("src/Die2r.png"));
-            Die3 = ImageIO.read(new File("src/Die3r.png"));
-            Die4 = ImageIO.read(new File("src/Die4r.png"));
-            Die5 = ImageIO.read(new File("src/Die5r.png"));
-            Die6 = ImageIO.read(new File("src/Die6r.png"));
+            Die1 = ImageIO.read(new File("images/Die1r.png")); //Die side images must be one the src folder
+            Die2 = ImageIO.read(new File("images/Die2r.png"));
+            Die3 = ImageIO.read(new File("images/Die3r.png"));
+            Die4 = ImageIO.read(new File("images/Die4r.png"));
+            Die5 = ImageIO.read(new File("images/Die5r.png"));
+            Die6 = ImageIO.read(new File("images/Die6r.png"));
         } catch (IOException e) { // In case there is an error reading the files we give an IOException
             e.printStackTrace();
         }
